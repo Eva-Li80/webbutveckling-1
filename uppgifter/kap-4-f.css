@@ -1,10 +1,50 @@
 html {
-    background-color: lightslategrey;
+  background-color: lightslategrey; /*sätter bakgrundsfärg*/
 }
 body {
-    margin: auto;
-    max-width: 500px;
-    padding-bottom: 0.1px; /*knep för div margin */
+  margin: auto; /*auto margin, storlek på body, luft, backgrunds färg och vilken text typ det ska vara*/
+  max-width: 500px;
+  padding-bottom: 0.1px;
+  background-color: azure;
+  font-family: sans-serif;
 }
 h1 {
+  color: purple; /* ger lila färg och centrerar texten*/
+  text-align: center;
 }
+div {
+  border: 2px solid purple; /*la till e px till för att få border lite mer markant*/
+  border-radius: 5px; /*formar kanterna runt*/
+  margin: 10px 10px 10px 10px; /*så att inte texkten går in i kanterna*/
+}
+#billy {
+  color: darkred; /*röd text*/
+  padding: 10px; /*utrymme*/
+}
+#bob {
+  color: darkgreen; /*samma som ovan men att texten blir grön*/
+  padding: 10px;
+}
+.two {
+  font-size: larger; /*texten större*/
+}
+div .three {
+  font-size: smaller; /*texten mindre*/
+}
+div > p {
+  font-weight: bolder; /*tjokckare text*/
+}
+#bob > .two + p + p {
+  text-align: justify; /* gör texten rättvis*/
+}
+#bob a {
+  text-decoration: line-through; /*streck över a items*/
+}
+#bob .two a {
+  text-decoration: underline overline orange double; /*streck under och över med orange färg på tvåans a item*/
+}
+
+/* jag har försökt att utgå från arbetsboken och även gjort någon lite extra justering som jag tyckte gjorde så att det skulle likna mer*/
+/* tycker att jag förstått första uppgiften väl och att den var rolig att göra*/
+
+/*Av: Eva-Li Nätynki Bodén*/
