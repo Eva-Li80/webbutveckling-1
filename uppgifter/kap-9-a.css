@@ -1,0 +1,6 @@
+circle {
+  fill: red; /*fyller cirkel med röd*/
+}
+circle {
+  stroke: aqua; /*ger en linje runt om cirkeln med aqua färg*/
+}

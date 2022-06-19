@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="utf-8" />
-  <title>Uppgift 9A, Arbetsboken WU1</title>
-  <meta name="description" content="Arbetsboken Webbteknik 1, Uppgift 9A" />
-</head>
-<body>
-<h1>Uppgift 9A - testa SVG</h1>
-<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
-  <rect x="20" y="40" width="250" height="100" fill="rgb(200, 50, 50)" stroke="none" />
-  <circle cx="280" cy="150" r="100" fill="rgba(50, 200, 50, 0.5)" stroke="black" stroke-width="1"/>
-  <ellipse cx="170" cy="140" rx="120" ry="60" fill="rgba(50, 50, 250, 0.5)" />
-</svg>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Uppgift 9A, Arbetsboken WU1</title>
+    <meta name="description" content="Arbetsboken Webbteknik 1, Uppgift 9A" />
+    <link rel="stylesheet" href="/webbutveckling-1/uppgifter/kap-9-a.css" />
+  </head>
+  <body>
+    <h1>Uppgift 9A - testa SVG</h1>
+    <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+      <rect
+        x="20"
+        y="40"
+        width="250"
+        height="100"
+        fill="rgb(20, 255, 20)"
+        stroke="none"
+      />
+      <!--den ovan och den precis under ger en rektangel-->
+      <rect
+        x="10"
+        y="20"
+        width="150"
+        height="80"
+        fill="rgb(255, 255, 20)"
+        stroke="none"
+      />
+      <!--den under ger en cirkel-->
+      <circle
+        cx="180"
+        cy="100"
+        r="100"
+        fill="rgba(50, 200, 50, 0.5)"
+        stroke="black"
+        stroke-width="3"
+      />
+      <!--den under ger en oval cirkel-->
+      <ellipse
+        cx="170"
+        cy="140"
+        rx="120"
+        ry="60"
+        fill="rgba(50, 50, 250, 0.5)"
+      />
+      <!--den under ger ett streck-->
+      <line
+        x1="1"
+        y1="3"
+        x2="300"
+        y2="500"
+        style="stroke: rgb(255, 0, 225); stroke-width: 3"
+      />
+      <!--den under ger streck som sitter ihop med varandra-->
+      <polyline
+        points="50,50 50,50 50,501 50,150 150,150 151"
+        style="fill: none; stroke: black; stroke-width: 3"
+      />
+      <!--den under ger olika vinklar och fyllning i-->
+      <path d="M50 0 L75 200 L125 200 Z" />
+    </svg>
+  </body>
 </html>
